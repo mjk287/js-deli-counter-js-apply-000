@@ -1,6 +1,10 @@
-function takeANumber(lineOfPeople, name){
-  lineOfPeople.push(name)
-  return `Welcome, ${name}. You are number ${lineOfPeople.length} in line.`
+var personNum = 1
+var line = []
+
+function takeANumber(lineOfPeople){
+  lineOfPeople.push(personNum)
+  personNum ++
+  return `Welcome, you are number ${lineOfPeople.length} in line.`
 }
 
 function nowServing(lineOfPeople){
@@ -26,5 +30,14 @@ function currentLine(lineOfPeople) {
     }
   return "The line is currently empty."
   }
+  
+  console.log(takeANumber(line))
+ console.log(takeANumber(line))
+   console.log(takeANumber(line))
+ console.log(currentLine(line))
+  console.log(nowServing(line))
+ console.log(nowServing(line))
+ console.log(takeANumber(line))
+  console.log(currentLine(line))
   
   
